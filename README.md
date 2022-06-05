@@ -20,3 +20,23 @@ git push -u origin main
 git remote add origin git@github.com:vipul-garg/google-cloud-functions-python.git
 git branch -M main
 git push -u origin main
+
+## Create a python virtual environment
+First install python3-venv
+```
+sudo apt install python3-venv
+```
+Then run the following command
+``` 
+python3 -m venv venv
+```
+
+Activate the python virtual environment
+```
+source venv/bin/activate
+```
+
+To install the python package requirements run the following:
+```
+pip install -r requirements.txt
+```

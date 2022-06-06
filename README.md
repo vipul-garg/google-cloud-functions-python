@@ -40,3 +40,13 @@ To install the python package requirements run the following:
 ```
 pip install -r requirements.txt
 ```
+
+## Deploying the function
+First, we have to set our project ID with the following command:
+```
+gcloud config set project [YOUR_PROJECT_ID]
+```
+Then we deploy our function with this command:
+```
+gcloud functions deploy [FUNCTION_NAME] --runtime python37 --trigger-http
+```
